@@ -1,1 +1,9 @@
 Here find More about updating an object's properties
+
+we can update a objet propertie by usaing dot Notation e.g
+    userOne.name = 'momoSana'
+    userOne.Age = 21,
+
+we can also update an object by adding  new properties using square brackets
+   usreOne['height'] = Nelson
+   userTwo['weight'] = 300kg
