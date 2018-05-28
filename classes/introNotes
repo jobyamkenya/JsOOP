@@ -1,1 +1,91 @@
 Here we learn about classes
+1) create an empty class
+2) create a constructor inside the class to help us create multiple objects
+3) insert properties
+
+
+    class User{
+        constructor(firstName, lastName, email, passWord){
+
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.email = email;
+                this.password = password;
+
+        }
+    }
+
+      //we can create many intances of the User objects from this class using the new kewword
+
+    var student1 = new User('Nelson', 'Ongiti', 'nelson@gmail.com', 'menemenetekel');
+    var student2 = new User('mike', 'Soto', 'soto@gmail.com', 'sotozxc');
+
+
+    .........................................................................................
+
+    Class methods
+
+       - class Methods are written outside the constructor but inside the class
+       EXAMPLE: 
+
+        class User{
+            constructor(firstName, lastName, email, passWord){
+
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.email = email;
+                this.password = password;
+
+            }
+            login(){
+
+            }
+
+            logout(){
+
+            }
+        }
+
+.............................................................................................
+method chaining
+this is where you call several methods on a sigle object
+
+class User{
+  // inside the class create a constructor to help us create object instances
+  constructor(name, email, score){
+     //set constructor properties
+     this.name = name;
+     this.email = email;
+     this.score = 0;
+
+  }
+
+  //class methods are written outside the constructor but inside the class
+  login(){
+      console.log(this.email, 'Welcome .......loggedIn');
+      return this;
+  }
+
+  logout(){
+        console.log(this.email, 'Bye Now........loggedOut');
+        return this;
+  }
+
+  updateScore(){
+  	this.score++
+  	console.log(this.email, 'Score is Now', this.score);
+  	return this;
+  }
+}
+
+//Note by using "return this" keword, we are able to access our object and  can call any method or methods associated with it
+//therefore Below now we can chain as methods together as much as our objects needs to accomplish its task
+
+userOne.login().updateScore().updateScore().updateScore().logout();
+userTwo.login().updateScore().updateScore().updateScore().updateScore().logout()
+
+
+
+.............................................................................................
+CLASS INHERITANCE
+
