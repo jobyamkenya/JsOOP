@@ -1,1 +1,17 @@
 In this LEsson i will Learn Object Literals
+
+create an object
+    var userOne = {} //empty object
+
+    add properties to the object
+    var userOne= {
+        this.name = name,
+        this.email = email,
+        login(){
+            console.log('logged in');
+        },
+
+        logout(){
+            console.log('loggedOut');
+        }
+    }
