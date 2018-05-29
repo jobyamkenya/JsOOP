@@ -1,0 +1,8 @@
+Here we are going to attemp to understand how raw js Inheritance works rather
+by rwa i mean we do not use Classes but rather we use prototype.
+how you enjoy!!!!!
+........................................................................
+
+first we are going to make a function constructor called apartment  then we will also create a second constructor function called landlord that inherits ownership of the apartment
+
+function
